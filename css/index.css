@@ -66,13 +66,13 @@ body {
 }
 
 .big-space {
-  margin: 200px 0;
+  margin: 100px 0;
 }
 
 h1 {
   font-family: var(--font-special);
   font-size: 86px;
-  line-height: 1.1;
+  line-height: 0.8;
   font-weight: 400;
 }
 
@@ -108,7 +108,8 @@ h4 {
 .nav {
   display: flex;
   justify-content: space-evenly;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 
@@ -127,7 +128,7 @@ h4 {
 
 .scotia {
     grid-area: scotia;
-  max-width: 100px;
+  max-width: 75px;
   justify-self: end;
   margin-right: 1rem;
   transform: rotate(-10deg);
@@ -135,7 +136,7 @@ h4 {
 
 .peter {
     grid-area: peter;
-    max-width: 100px;
+    max-width: 75px;
     justify-self: start;
   margin-left: 1rem;
   transform: rotate(10deg);
@@ -218,12 +219,12 @@ a.text-link:hover {
 }
 
 .when-text, .where-text {
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .when-text {
   grid-area: when;
-  padding: 35px 50px;
+  padding: 35px 25px;
 }
 
 .where-text {
@@ -293,6 +294,29 @@ button.learn-more:active::before {
   transform: translate3d(0, 0, -1em);
 }
 
+@media (min-width: 470px) {
+  h1 {
+    font-size: 115px;
+    line-height: 1.1
+  }
+
+  .peter {
+    max-width: 100px;
+  }
+
+  .scotia {
+    max-width: 100px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .when-text, .where-text {
+    font-size: 48px;
+  }
+
+}
 
 @media (min-width: 605px) {
   h1 {
@@ -312,6 +336,11 @@ button.learn-more:active::before {
   h4 {
   font-size: 18px;
 }
+
+.big-space {
+  margin: 200px 0;
+}
+
 }
 
 @media (min-width: 768px) {
